@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flutuando na Página</title>
+</head>
+<body>
+    <img src="./vuejs-1175052.png" alt="Logo Vue" class="logo">
+    <style>
+        .logo{
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            50%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-25%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</body>
+</html>
